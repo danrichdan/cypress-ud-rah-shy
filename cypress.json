@@ -1,0 +1,10 @@
+{
+  "defaultCommandTimeout": 8000,
+  "pageLoadTimeout": 10000,
+  "reporter": "mochawesome",
+  "env": {
+    "url": "https://rahulshettyacademy.com",
+    "other_url": "http://www.qaclickacademy.com"
+  },
+  "projectId": "mg5n99"
+}

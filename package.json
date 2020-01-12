@@ -1,0 +1,21 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "headTest": "cypress run --headed",
+    "cy:record": "cypress run --record --key bf0060a2-ae87-4f29-a407-1a07dfbf12e3",
+    "cy:mocha": "cypress run --reporter mochawesome --spec cypress/integration/examples/Test8Framework.spec.js",
+    "cy:folder": "npm run headTest -- --spec \"cypress/integration/GreenKart/*\""
+  },
+  "author": "Rahul Shetty",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^3.4.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0"
+  }
+}
