@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-
+// Test is failing when run in Chrome, but not Electron
 describe('Test 2', function() {
   it('Does not do much!', function() {
     cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/');

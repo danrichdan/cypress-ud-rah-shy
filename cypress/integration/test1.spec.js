@@ -38,11 +38,12 @@ describe('Test 1', function() {
       });
 
     //assert if logo text is correctly displayed
-    cy.get('.brand').should('have.text', 'GREENKART');
+    cy.get('.brand img').should('have.attr', 'src').and('include', 'logo');
+    //should('have.text', 'GREENKART');
 
     //This is to print in logs
-    cy.get('.brand').then(function(logoElement) {
-      cy.log(logoElement.text());
+    cy.get('.brand img').then(function(logoElement) {
+      cy.log(logoElement.attr('src'));
     });
     //cy.log(logo.text())
     //.text() -- a JQuery function, Cypress returns JQuery Objects
